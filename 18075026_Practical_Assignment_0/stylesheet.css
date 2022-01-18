@@ -1,0 +1,109 @@
+
+
+html{
+  --color-red : #de0430;
+  --color-blue: #110d54;
+  --color-bg : #d0f2d7;
+  --color-shadow: #BABECC;
+  --color-white: #FFF;
+  --ruler : 16px;
+}
+body, html {
+  background-color:var(--color-bg);
+  background-image: url("BGImage.jpg");
+}
+
+body, p, input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: var(--ruler);
+    color: var(--color-red);
+}
+
+div, p {
+  color: var(--color-red);
+  text-shadow: 3px 3px 3px var(--color-blue);
+}
+
+
+form {
+  padding: var(--ruler);
+  width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  margin-right: var(--ruler);
+  margin-top: var(--ruler);
+  box-shadow:  inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  border-width: 2px;
+  border-style: inset;
+  font-size: var(--ruler);
+  border-radius: var(--ruler);
+  padding: var(--ruler);
+  background-color:var(--color-bg);
+  text-shadow: 1px 1px 0 var(--color-white);
+  color:  darkred;
+}
+
+label {
+  display: block;
+  margin-bottom: var(--ruler);
+  width: 100%;
+}
+
+input,textarea : focus {
+  box-shadow:  inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+}
+
+button {  
+  padding: var(--ruler);
+  border-width: 2px;
+  border-style: inset;
+  font-size: var(--ruler);
+  border-radius: var(--ruler);
+  padding: var(--ruler);
+  margin-right: var(--ruler);
+  margin-top: var(--ruler);
+  margin-bottom: var(--ruler);
+  box-shadow:  inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+  width: 100%;
+  color: navy;
+  font-size: 28px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: skyblue;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+}
+
+
+textarea{
+  resize: none;
+
+}
+
+.segment {
+  text-align: center;
+}
+
+
+.screen-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
